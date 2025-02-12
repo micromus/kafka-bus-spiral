@@ -1,20 +1,13 @@
-# :package_description
+# This is my package kafka-bus-spiral
 
-[![PHP Version Require](https://poser.pugx.org/:vendor_slug/:package_slug/require/php)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![Latest Stable Version](https://poser.pugx.org/:vendor_slug/:package_slug/v/stable)](https://packagist.org/packages/:vendor_slug/:package_slug)
-[![phpunit](https://github.com/:vendor_slug/:package_slug/actions/workflows/phpunit.yml/badge.svg)](https://github.com/:vendor_slug/:package_slug/actions)
-[![psalm](https://github.com/:vendor_slug/:package_slug/actions/workflows/psalm.yml/badge.svg)](https://github.com/:vendor_slug/:package_slug/actions)
-[![Codecov](https://codecov.io/gh/:vendor_slug/:package_slug/branch/master/graph/badge.svg)](https://codecov.io/gh/:vendor_slug/:package_slug/)
-[![Total Downloads](https://poser.pugx.org/:vendor_slug/:package_slug/downloads)](https://packagist.org/:vendor_slug/:package_slug/phpunit)
+[![PHP Version Require](https://poser.pugx.org/micromus/kafka-bus-spiral/require/php)](https://packagist.org/packages/micromus/kafka-bus-spiral)
+[![Latest Stable Version](https://poser.pugx.org/micromus/kafka-bus-spiral/v/stable)](https://packagist.org/packages/micromus/kafka-bus-spiral)
+[![phpunit](https://github.com/micromus/kafka-bus-spiral/actions/workflows/phpunit.yml/badge.svg)](https://github.com/micromus/kafka-bus-spiral/actions)
+[![psalm](https://github.com/micromus/kafka-bus-spiral/actions/workflows/psalm.yml/badge.svg)](https://github.com/micromus/kafka-bus-spiral/actions)
+[![Codecov](https://codecov.io/gh/micromus/kafka-bus-spiral/branch/master/graph/badge.svg)](https://codecov.io/gh/micromus/kafka-bus-spiral/)
+[![Total Downloads](https://poser.pugx.org/micromus/kafka-bus-spiral/downloads)](https://packagist.org/micromus/kafka-bus-spiral/phpunit)
 
-<!--delete-->
----
-This repo can be used to scaffold a Spiral Framework package. Follow these steps to get started:
 
-1. Press the "Use template" button at the top of this repo to create a new repo with the contents of this skeleton.
-2. Run `php ./configure.php` to run a script that will replace all placeholders throughout all the files.
----
-<!--/delete-->
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 
@@ -30,7 +23,7 @@ Make sure that your server is configured with following PHP version and extensio
 You can install the package via composer:
 
 ```bash
-composer require :vendor_slug/:package_slug
+composer require micromus/kafka-bus-spiral
 ```
 
 After package install you need to register bootloader from the package.
@@ -38,7 +31,7 @@ After package install you need to register bootloader from the package.
 ```php
 protected const LOAD = [
     // ...
-    \VendorName\Skeleton\Bootloader\SkeletonBootloader::class,
+    \Micromus\KafkaBusSpiral\Bootloader\KafkaBusSpiralBootloader::class,
 ];
 ```
 
@@ -65,7 +58,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [:author_name](https://github.com/:author_username)
+- [Micromus](https://github.com/popkovkirill)
 - [All Contributors](../../contributors)
 
 ## License

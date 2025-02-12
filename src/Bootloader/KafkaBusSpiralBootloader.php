@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace VendorName\Skeleton\Bootloader;
+namespace Micromus\KafkaBusSpiral\Bootloader;
 
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Core\Container;
 use Spiral\Config\ConfiguratorInterface;
-use VendorName\Skeleton\Commands;
-use VendorName\Skeleton\Config\SkeletonConfig;
+use Micromus\KafkaBusSpiral\Commands;
+use Micromus\KafkaBusSpiral\Config\KafkaBusSpiralConfig;
 use Spiral\Console\Bootloader\ConsoleBootloader;
 
-final class SkeletonBootloader extends Bootloader
+final class KafkaBusSpiralBootloader extends Bootloader
 {
     protected const BINDINGS = [];
     protected const SINGLETONS = [];
@@ -26,7 +26,7 @@ final class SkeletonBootloader extends Bootloader
     {
         $this->initConfig();
 
-        $console->addCommand(Commands\SkeletonCommand::class);
+        $console->addCommand(Commands\KafkaBusSpiralCommand::class);
     }
 
     public function boot(Container $container): void
@@ -36,7 +36,7 @@ final class SkeletonBootloader extends Bootloader
     private function initConfig(): void
     {
         $this->config->setDefaults(
-            SkeletonConfig::CONFIG,
+            KafkaBusSpiralConfig::CONFIG,
             []
         );
     }
